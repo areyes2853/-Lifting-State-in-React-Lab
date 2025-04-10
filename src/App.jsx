@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import IngredientList from './components/IngredientList/IngredientList.jsx'
+import BurgerStack from './components/BurgerStack/BurgerStack.jsx'
 
 // src/App.jsx
 
@@ -29,7 +31,8 @@ const App = () => {
     <main>
       <h1>Burger Stacker</h1>
       <section>
-      {/* List & Stack components */}
+        <IngredientList name ={availableIngredients.name} name ={availableIngredients.color} />  // add here! 
+        <BurgerStack name={availableIngredients.name}color={availableIngredients.color}/>
       </section>
     </main>
   );
