@@ -41,6 +41,7 @@ const App = () => {
   const removeFromBurger = (indexToRemove) => {
     // Update the stack state by creating a new array excluding the item at indexToRemove
     setStack(prevStack => prevStack.filter((_, index) => index !== indexToRemove));
+    //The first argument (_) is the current item in the array.
     // Log for debugging (optional)
     console.log("Removing from stack at index:", indexToRemove);
   };
